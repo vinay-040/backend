@@ -125,7 +125,9 @@ def contact():
         flash("We will get back to you soon..","success")
         return render_template("contact.html")
     return render_template("contact.html")
-
+@app.route("/about")
+def about():
+    return render_template("about.html")
 #http://127.0.0.1:5000/signup
 @app.route("/signup",methods=['GET','POST'])
 def signup():
